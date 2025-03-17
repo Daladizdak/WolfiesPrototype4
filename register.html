@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Wolverhampton Open Day</title>
+    <!-- External stylesheets and dependencies -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Logo.png" alt="University of Wolverhampton Logo">
+            </div>
+            <!-- Main navigation menu with anchor links to page sections -->
+            <ul class="nav-links">
+                <li><a href="events.html">Events</a></li>
+                <li><a href="tour.html">Campus Tour</a></li>
+                <li><a href="life.html">University Life</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+            <!-- Mobile hamburger menu -->
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+   <div class="register-form">
+                    <form id="openDayForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name*</label>
+                            <input type="text" id="fullName" name="fullName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address*</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="studyLevel">Study Level*</label>
+                            <select id="studyLevel" name="studyLevel" required>
+                                <option value="">Select an option</option>
+                                <option value="undergraduate">Undergraduate</option>
+                                <option value="postgraduate">Postgraduate</option>
+                                <option value="research">Research</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subjectInterest">Subject Interest*</label>
+                            <select id="subjectInterest" name="subjectInterest" required>
+                                <option value="">Select an option</option>
+                                <option value="business">Business & Management</option>
+                                <option value="computing">Computing & IT</option>
+                                <option value="arts">Arts & Humanities</option>
+                                <option value="engineering">Engineering</option>
+                                <option value="health">Health & Social Care</option>
+                                <option value="law">Law</option>
+                                <option value="science">Science</option>
+                                <option value="social">Social Sciences</option>
+                                <option value="sport">Sport</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <select id="guests" name="guests">
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4+</option>
+                            </select>
+                        </div>
+                        
+                        <!-- Conditional form field - will be shown/hidden with JavaScript -->
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="specialRequirements" name="specialRequirements">
+                            <label for="specialRequirements">I have special requirements or accessibility needs</label>
+                        </div>
+                        
+                        <div class="form-group special-requirements-details hidden">
+                            <label for="specialRequirementsDetails">Please provide details</label>
+                            <textarea id="specialRequirementsDetails" name="specialRequirementsDetails"></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="termsAgree" name="termsAgree" required>
+                            <label for="termsAgree">I agree to the University of Wolverhampton processing my data*</label>
+                        </div>
+                        
+                        <div class="form-submit">
+                            <button type="submit" class="submit-button">Register Now</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+  <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <img src="Logo.png" alt="University of Wolverhampton Logo">
+                </div>
+                <!-- Footer navigation organized in columns -->
+                <div class="footer-nav">
+                    <div class="footer-nav-col">
+                        <h4>Study</h4>
+                        <ul>
+                            <li><a href="#">Undergraduate</a></li>
+                            <li><a href="#">Postgraduate</a></li>
+                            <li><a href="#">International</a></li>
+                            <li><a href="#">Part-time</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h4>About</h4>
+                        <ul>
+                            <li><a href="#">Our History</a></li>
+                            <li><a href="#">Campus Locations</a></li>
+                            <li><a href="#">Faculties</a></li>
+                            <li><a href="#">Research</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-col">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#">Student Services</a></li>
+                            <li><a href="#">Accommodation</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Disability Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Copyright and legal links -->
+            <div class="footer-bottom">
+                <p>Wolfies project</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+</html>
